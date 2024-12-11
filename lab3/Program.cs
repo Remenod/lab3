@@ -23,7 +23,11 @@ namespace lab3
                 try
                 {
                     var temp = Array.ConvertAll(Console.ReadLine().Split(), decimal.Parse);
-                    if (temp.Length != 2) continue;
+                    if (temp.Length != 2)
+                    {
+                        Console.WriteLine("Координата це 2 числа");
+                        continue;
+                    }
                     point1 = new(temp);
                     break;
                 }
